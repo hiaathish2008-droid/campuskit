@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CampusKit — student-focused buying guides for tech, hostel and study essentials in India.">
+<title>CampusKit — Smart Finds for College Life</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap nav">
+<a class="brand" href="index.html">Campus<span>Kit</span></a>
+<nav class="nav-links">
+<a href="#categories">Categories</a><a href="#guides">Guides</a><a href="about.html">About</a><a href="disclosure.html">Disclosure</a><a class="nav-cta" href="#guides">Explore guides</a>
+</nav><button class="menu-btn" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('mobile-open')">☰</button>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div><p class="eyebrow">BUILT FOR COLLEGE LIFE</p>
+<h1>Buy smarter. <em>Study better.</em></h1>
+<p class="lead">Straightforward buying guides for Indian college students — from laptop accessories and study setups to hostel essentials.</p>
+<div class="hero-actions"><a class="button" href="#guides">Explore guides →</a><a class="button secondary" href="#categories">Browse categories</a></div>
+<div class="search-wrap"><input id="siteSearch" type="search" placeholder="Search guides e.g. laptop stand..." aria-label="Search guides"><button onclick="searchGuides()">Search</button></div>
+</div>
+<div class="hero-panel"><div class="mock-browser"><div class="browser-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="mock-content"><span class="mock-chip">STUDENT PICKS</span><div class="mock-title">Simple choices, explained clearly.</div><div class="mock-line w80"></div><div class="mock-line w60"></div><div class="mock-products"><div class="mock-product">💻</div><div class="mock-product">🎒</div><div class="mock-product">💡</div></div></div></div></div>
+</div></section>
+
+<section id="categories" class="wrap section">
+<div class="section-head"><div><p class="eyebrow">BROWSE</p><h2>What are you looking for?</h2><p>Start with a category and narrow down what actually matters.</p></div></div>
+<div class="categories">
+<a class="category" href="#guides"><div class="category-icon">💻</div><h3>Tech</h3><p>Laptop accessories, mice, keyboards and useful gadgets.</p></a>
+<a class="category" href="#guides"><div class="category-icon">🛏️</div><h3>Hostel</h3><p>Organization, desk setup and practical room essentials.</p></a>
+<a class="category" href="#guides"><div class="category-icon">📚</div><h3>Study</h3><p>Study lighting, setup ideas and everyday productivity gear.</p></a>
+<a class="category" href="#guides"><div class="category-icon">🎒</div><h3>College</h3><p>Backpacks, first-year essentials and campus checklists.</p></a>
+</div></section>
+
+<section id="guides" class="wrap section">
+<div class="section-head"><div><p class="eyebrow">EDITORIAL PICKS</p><h2>Latest buying guides</h2><p>Useful comparisons without the unnecessary hype.</p></div><a class="text-link" href="#guides">View all →</a></div>
+<div id="articleGrid" class="article-grid">
+
+</div></section>
+
+<section class="wrap section">
+<div class="featured"><div><p class="eyebrow" style="color:#9ebbe7">START SIMPLE</p><h2 style="font-family:'Space Grotesk';font-size:2rem;margin:0">Build your college setup one useful item at a time.</h2><p>Before buying anything, check compatibility, current price, warranty and whether you actually need the feature.</p><a class="button" href="articles/study-setup.html">Read the setup guide →</a></div>
+<div class="stats"><div class="stat"><strong>10</strong><span>starter guides</span></div><div class="stat"><strong>4</strong><span>student categories</span></div><div class="stat"><strong>₹0</strong><span>to browse CampusKit</span></div></div></div>
+</section>
+
+<section class="wrap section"><div class="newsletter"><div><h2>Have a topic in mind?</h2><p>Suggest a product or college problem you'd like CampusKit to explain.</p></div><a class="button" href="contact.html">Suggest a guide</a></div></section>
+</main>
+
+<footer><div class="wrap footer-grid">
+<div><div class="footer-brand">CampusKit</div><p>Student-focused buying guides for practical college life. Prices and availability can change, so always verify details with the retailer before buying.</p></div>
+<div><h4>Explore</h4><a href="#categories">Categories</a><a href="#guides">Buying guides</a><a href="about.html">About</a></div>
+<div><h4>Transparency</h4><a href="disclosure.html">Affiliate disclosure</a><a href="contact.html">Contact</a></div>
+</div><div class="wrap footer-bottom">© 2026 CampusKit · Built for students</div></footer>
+<script>
+const guides = [
+["laptop-stands","TECH","Best Laptop Stands for College Students","What to look for in a portable stand and how to choose one.","💻"],
+["wireless-mouse","TECH","Best Wireless Mouse for College Students","Comfort, portability, connectivity and battery considerations.","🖱️"],
+["backpacks","COLLEGE","Best Backpacks for Engineering Students","A practical checklist for carrying a laptop, books and accessories.","🎒"],
+["college-gadgets","TECH","10 Useful Gadgets for College Students","A shortlist of practical gadgets to consider before buying.","🔌"],
+["study-lamps","STUDY","Best Study Lamps for Hostel Rooms","Size, brightness, adjustability and charging options explained.","💡"],
+["laptop-accessories","TECH","Best Laptop Accessories for College Students","A hub for stands, mice, keyboards, sleeves and useful extras.","💻"],
+["hostel-essentials","HOSTEL","College Hostel Essentials: What You Actually Need","A practical list without turning your room into a storage unit.","🛏️"],
+["keyboards","TECH","Best Keyboards for Students Under ₹1,500","Features to compare when you have a limited budget.","⌨️"],
+["study-setup","STUDY","How to Build a Simple College Study Setup on a Budget","Prioritize the basics before spending on extras.","📚"],
+["college-checklist","COLLEGE","College Essentials Checklist for First-Year Students","A simple checklist for tech, study, travel and hostel needs.","✅"]
+];
+document.getElementById("articleGrid").innerHTML = guides.map(g => `<a class="article-card" data-search="${g[2].toLowerCase()} ${g[3].toLowerCase()} ${g[1].toLowerCase()}" href="articles/${g[0]}.html"><div class="article-visual">${g[4]}</div><div class="article-body"><span class="tag">${g[1]}</span><h3>${g[2]}</h3><p>${g[3]}</p><span class="read">Read guide →</span></div></a>`).join("");
+function searchGuides(){const q=document.getElementById("siteSearch").value.trim().toLowerCase();document.querySelectorAll(".article-card").forEach(c=>c.classList.toggle("hidden",q && !c.dataset.search.includes(q)));document.getElementById("guides").scrollIntoView({behavior:"smooth"});}
+document.getElementById("siteSearch").addEventListener("keydown",e=>{if(e.key==="Enter")searchGuides()});
+</script>
+</body></html>
