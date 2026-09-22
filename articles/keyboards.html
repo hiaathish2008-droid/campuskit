@@ -1,13 +1,359 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="How to compare budget keyboards without getting distracted by unnecessary features."><title>Best Keyboards for Students Under ₹1,500 — CampusKit</title><link rel="stylesheet" href="../style.css"></head>
-<body><header class="site-header"><div class="wrap nav"><a class="brand" href="../index.html">Campus<span>Kit</span></a>
-<nav class="nav-links"><a href="../index.html#categories">Categories</a><a href="../index.html#guides">Guides</a><a href="../about.html">About</a><a href="../disclosure.html">Disclosure</a><a class="nav-cta" href="../index.html">CampusKit home</a></nav>
-<button class="menu-btn" aria-label="Menu">☰</button></div></header>
-<main><section class="article-hero wrap"><p class="eyebrow">CAMPUSKIT GUIDE</p><h1>Best Keyboards for Students Under ₹1,500</h1><p>How to compare budget keyboards without getting distracted by unnecessary features.</p></section>
-<article class="prose"><div class="callout"><strong>Quick note:</strong> This guide is designed to help you compare options. Product prices, specifications and availability can change.</div><h2>What to look for</h2><ul><li>Check layout first: full-size, tenkeyless or compact layouts have different desk-space requirements.</li>
-<li>For a laptop setup, wired keyboards can be simple and don't need battery management.</li>
-<li>For wireless models, compare connection type, battery claims and warranty.</li>
-<li>If you type frequently, key feel and noise may matter more than lighting effects.</li>
-<li>Prices change frequently, so use the retailer page for the current price.</li></ul><h2>How to choose</h2><p>Start with the problem you are trying to solve, then compare the features that directly affect it. Avoid paying for features you will not use. Always verify the latest specifications and price on the retailer's page before purchasing.</p><h2>Before you buy</h2><ul><li>Check compatibility with your existing devices.</li><li>Read the current product specifications and warranty information.</li><li>Compare the total price, including any delivery charges shown by the retailer.</li><li>Check recent customer feedback for recurring practical issues.</li></ul><h2>Affiliate links</h2><p class="disclosure">CampusKit may later include clearly labelled affiliate links on this page. If you buy through a qualifying affiliate link, the site may receive a commission at no additional cost to you.</p><p><a class="price-btn" href="../disclosure.html">Read our disclosure</a></p></article></main>
-<footer><div class="wrap footer-grid"><div><div class="footer-brand">CampusKit</div><p>Student-focused buying guides for practical college life.</p></div><div><h4>Explore</h4><a href="../index.html">Home</a><a href="../index.html#guides">Buying guides</a></div><div><h4>Transparency</h4><a href="../disclosure.html">Affiliate disclosure</a><a href="../contact.html">Contact</a></div></div><div class="wrap footer-bottom">© 2026 CampusKit · Always verify current retailer information before buying.</div></footer>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Keyboards for Students Under ₹1,500 — CampusKit</title>
+<meta name="description" content="Best Keyboards for Students Under ₹1,500 — CampusKit buying guide for college students.">
+<style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: #f7f7f5;
+      color: #111;
+      line-height: 1.55;
+    }
+    a { color: inherit; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(247,247,245,.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #e8e8e4;
+    }
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo { font-size: 24px; font-weight: 800; text-decoration: none; }
+    .nav-links { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 2px; }
+    .nav-links a { white-space: nowrap; text-decoration: none; color: #555; font-size: 14px; }
+    .nav-links a:hover { color: #111; }
+    .hero {
+      max-width: 1200px;
+      margin: auto;
+      padding: 70px 22px 45px;
+    }
+    .eyebrow {
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      color: #777;
+    }
+    .hero h1 {
+      max-width: 850px;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: .98;
+      margin: 18px 0;
+      letter-spacing: -.05em;
+    }
+    .hero p { max-width: 720px; color: #666; font-size: 18px; }
+    main { max-width: 1200px; margin: auto; padding: 0 22px 80px; }
+    .category-section { padding: 60px 0; border-top: 1px solid #deded9; scroll-margin-top: 80px; }
+    .section-heading { margin-bottom: 26px; }
+    .section-label {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 12px;
+      font-weight: 800;
+      color: #777;
+    }
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.05;
+      letter-spacing: -.035em;
+      margin: 8px 0 10px;
+    }
+    .section-heading p { color: #707070; margin: 0; }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .product-card {
+      background: #fff;
+      border: 1px solid #e6e6e1;
+      border-radius: 18px;
+      overflow: hidden;
+      min-width: 0;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,.08);
+    }
+    .product-image {
+      height: 150px;
+      display: grid;
+      place-items: center;
+      background: #f0f0ec;
+      font-size: 58px;
+    }
+    .product-info { padding: 18px; }
+    .tag {
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: #777;
+      font-size: 10px;
+      font-weight: 800;
+    }
+    .product-info h3 {
+      font-size: 18px;
+      line-height: 1.2;
+      margin: 8px 0;
+    }
+    .product-info p {
+      color: #707070;
+      font-size: 13px;
+      min-height: 60px;
+      margin: 0 0 15px;
+    }
+    .buy-btn {
+      display: inline-block;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      border-radius: 9px;
+      padding: 9px 12px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    footer {
+      border-top: 1px solid #ddd;
+      padding: 30px 22px;
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+    }
+    @media (max-width: 1000px) {
+      .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 700px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero { padding-top: 45px; }
+    }
+    @media (max-width: 480px) {
+      .product-grid { grid-template-columns: 1fr; }
+      .product-image { height: 130px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="logo" href="../index.html">CampusKit</a>
+    <div class="nav-links">
+        <a href="../index.html">← Back to CampusKit</a>
+    </div>
+  </nav>
+</header>
+
+<main style="padding-top:40px;">
+<section class="category-section" id="keyboards">
+      <div class="section-heading">
+        <span class="section-label">Tech</span>
+        <h2>Best Keyboards for Students Under ₹1,500</h2>
+        <p>20 useful options to compare before buying.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Compact Wired Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Compact+Wired+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Full-Size Wired Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Full-Size+Wired+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Wireless Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Wireless+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Slim Wireless Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Slim+Wireless+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Mechanical-Feel Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Mechanical-Feel+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Membrane Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Membrane+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Compact Mechanical Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Compact+Mechanical+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Bluetooth Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Bluetooth+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Multi-Device Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Multi-Device+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Silent Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Silent+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Ergonomic Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Ergonomic+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>RGB Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=RGB+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Tenkeyless Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Tenkeyless+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Portable Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Portable+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>USB-C Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=USB-C+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Low-Profile Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Low-Profile+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Office Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Office+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Gaming Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Gaming+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Mini Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Mini+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Keyboard and Mouse Combo</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Keyboard+and+Mouse+Combo" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+</main>
+
+<footer>
+  CampusKit — Student essentials, comparisons and buying guides.
+</footer>
+
+</body>
+</html>
