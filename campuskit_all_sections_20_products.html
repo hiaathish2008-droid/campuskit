@@ -1,0 +1,1886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusKit — Student Essentials</title>
+  <meta name="description" content="CampusKit guides and product ideas for college students, hostel life, study and tech.">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: #f7f7f5;
+      color: #111;
+      line-height: 1.55;
+    }
+    a { color: inherit; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(247,247,245,.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #e8e8e4;
+    }
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo { font-size: 24px; font-weight: 800; text-decoration: none; }
+    .nav-links { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 2px; }
+    .nav-links a { white-space: nowrap; text-decoration: none; color: #555; font-size: 14px; }
+    .nav-links a:hover { color: #111; }
+    .hero {
+      max-width: 1200px;
+      margin: auto;
+      padding: 70px 22px 45px;
+    }
+    .eyebrow {
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      color: #777;
+    }
+    .hero h1 {
+      max-width: 850px;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: .98;
+      margin: 18px 0;
+      letter-spacing: -.05em;
+    }
+    .hero p { max-width: 720px; color: #666; font-size: 18px; }
+    main { max-width: 1200px; margin: auto; padding: 0 22px 80px; }
+    .category-section { padding: 60px 0; border-top: 1px solid #deded9; scroll-margin-top: 80px; }
+    .section-heading { margin-bottom: 26px; }
+    .section-label {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 12px;
+      font-weight: 800;
+      color: #777;
+    }
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.05;
+      letter-spacing: -.035em;
+      margin: 8px 0 10px;
+    }
+    .section-heading p { color: #707070; margin: 0; }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .product-card {
+      background: #fff;
+      border: 1px solid #e6e6e1;
+      border-radius: 18px;
+      overflow: hidden;
+      min-width: 0;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,.08);
+    }
+    .product-image {
+      height: 150px;
+      display: grid;
+      place-items: center;
+      background: #f0f0ec;
+      font-size: 58px;
+    }
+    .product-info { padding: 18px; }
+    .tag {
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: #777;
+      font-size: 10px;
+      font-weight: 800;
+    }
+    .product-info h3 {
+      font-size: 18px;
+      line-height: 1.2;
+      margin: 8px 0;
+    }
+    .product-info p {
+      color: #707070;
+      font-size: 13px;
+      min-height: 60px;
+      margin: 0 0 15px;
+    }
+    .buy-btn {
+      display: inline-block;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      border-radius: 9px;
+      padding: 9px 12px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    footer {
+      border-top: 1px solid #ddd;
+      padding: 30px 22px;
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+    }
+    @media (max-width: 1000px) {
+      .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 700px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero { padding-top: 45px; }
+    }
+    @media (max-width: 480px) {
+      .product-grid { grid-template-columns: 1fr; }
+      .product-image { height: 130px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a class="logo" href="#">CampusKit</a>
+    <div class="nav-links">
+        <a href="#laptop-stands">Best Laptop Stands for College Students</a>
+        <a href="#wireless-mouse">Best Wireless Mouse for College Students</a>
+        <a href="#backpacks">Best Backpacks for Engineering Students</a>
+        <a href="#gadgets">10 Useful Gadgets for College Students</a>
+        <a href="#study-lamps">Best Study Lamps for Hostel Rooms</a>
+        <a href="#laptop-accessories">Best Laptop Accessories for College Students</a>
+        <a href="#hostel-essentials">College Hostel Essentials: What You Actually Need</a>
+        <a href="#keyboards">Best Keyboards for Students Under ₹1,500</a>
+        <a href="#study-setup">How to Build a Simple College Study Setup on a Budget</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">CampusKit Guide</div>
+  <h1>Everything a college student actually needs.</h1>
+  <p>Browse tech, hostel, study and everyday college essentials. Each section contains 20 product ideas that you can later connect to your preferred Amazon product or affiliate link.</p>
+</section>
+
+<main>
+    <section class="category-section" id="laptop-stands">
+      <div class="section-heading">
+        <span class="section-label">Tech</span>
+        <h2>Best Laptop Stands for College Students</h2>
+        <p>20 useful options to compare before buying.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Aluminium Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Aluminium+Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Foldable Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Foldable+Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Adjustable Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Adjustable+Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Vertical Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Vertical+Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Portable Laptop Riser</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Portable+Laptop+Riser" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Cooling Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Cooling+Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Wooden Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Wooden+Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Ergonomic Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Ergonomic+Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Dual-Height Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Dual-Height+Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Metal Laptop Riser</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Metal+Laptop+Riser" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Compact Travel Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Compact+Travel+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Laptop Bed Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Bed+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Ventilated Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Ventilated+Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Heavy-Duty Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Heavy-Duty+Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Notebook Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Notebook+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Adjustable Desk Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Adjustable+Desk+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Foldable Aluminium Riser</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Foldable+Aluminium+Riser" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Monitor-Style Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Monitor-Style+Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Lightweight Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Lightweight+Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Laptop Stand with Phone Holder</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Stand+with+Phone+Holder" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="category-section" id="wireless-mouse">
+      <div class="section-heading">
+        <span class="section-label">Tech</span>
+        <h2>Best Wireless Mouse for College Students</h2>
+        <p>20 useful options to compare before buying.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Silent Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Silent+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Bluetooth Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Bluetooth+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>2.4GHz Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=2.4GHz+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Rechargeable Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Rechargeable+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Ergonomic Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Ergonomic+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Compact Travel Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Compact+Travel+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Multi-Device Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Multi-Device+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Silent Click Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Silent+Click+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Wireless Mouse with USB Receiver</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Wireless+Mouse+with+USB+Receiver" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Slim Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Slim+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>RGB Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=RGB+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Vertical Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Vertical+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Low-Profile Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Low-Profile+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Precision Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Precision+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Portable Bluetooth Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Portable+Bluetooth+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Budget Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Budget+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Long-Battery Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Long-Battery+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Laptop Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Office Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Office+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🖱️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Dual-Mode Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Dual-Mode+Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="category-section" id="backpacks">
+      <div class="section-heading">
+        <span class="section-label">College</span>
+        <h2>Best Backpacks for Engineering Students</h2>
+        <p>20 useful options to compare before buying.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Laptop Backpack 15.6-inch</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Backpack+15.6-inch" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Water-Resistant College Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Water-Resistant+College+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>USB Charging Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=USB+Charging+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Anti-Theft Laptop Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Anti-Theft+Laptop+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Large College Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Large+College+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Minimal Laptop Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Minimal+Laptop+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Travel Laptop Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Travel+Laptop+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Multi-Compartment Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Multi-Compartment+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Lightweight College Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Lightweight+College+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Engineering Student Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Engineering+Student+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Backpack with Laptop Sleeve</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Backpack+with+Laptop+Sleeve" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Backpack with Shoe Compartment</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Backpack+with+Shoe+Compartment" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Casual Laptop Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Casual+Laptop+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Premium Laptop Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Premium+Laptop+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Compact Daypack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Compact+Daypack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Trolley-Compatible Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Trolley-Compatible+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Rainproof College Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Rainproof+College+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Backpack with Bottle Pocket</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Backpack+with+Bottle+Pocket" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Backpack with Organizer</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Backpack+with+Organizer" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🎒</div>
+          <div class="product-info">
+            <span class="tag">College</span>
+            <h3>Convertible Laptop Backpack</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Convertible+Laptop+Backpack" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="category-section" id="gadgets">
+      <div class="section-heading">
+        <span class="section-label">Tech</span>
+        <h2>10 Useful Gadgets for College Students</h2>
+        <p>20 useful options to compare before buying.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>USB-C Hub</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=USB-C+Hub" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Power Bank</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Power+Bank" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Phone Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Phone+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Cable Organizer</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Cable+Organizer" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Fast Charger</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Fast+Charger" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Wireless Earbuds</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Wireless+Earbuds" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Bluetooth Speaker</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Bluetooth+Speaker" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Smart Plug</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Smart+Plug" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>USB Desk Fan</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=USB+Desk+Fan" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Rechargeable Reading Light</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Rechargeable+Reading+Light" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Mini Power Strip</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Mini+Power+Strip" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Portable SSD</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Portable+SSD" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>USB Flash Drive</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=USB+Flash+Drive" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Webcam Cover</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Webcam+Cover" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Screen Cleaning Kit</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Screen+Cleaning+Kit" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Laptop Cooling Pad</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Cooling+Pad" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Digital Alarm Clock</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Digital+Alarm+Clock" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Portable LED Light</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Portable+LED+Light" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Cable Management Box</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Cable+Management+Box" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🔌</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Multi-Port Charger</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Multi-Port+Charger" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="category-section" id="study-lamps">
+      <div class="section-heading">
+        <span class="section-label">Study</span>
+        <h2>Best Study Lamps for Hostel Rooms</h2>
+        <p>20 useful options to compare before buying.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>LED Study Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=LED+Study+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Rechargeable Desk Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Rechargeable+Desk+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>USB Study Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=USB+Study+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Touch-Control Desk Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Touch-Control+Desk+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Dimmable LED Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Dimmable+LED+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Foldable Study Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Foldable+Study+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Eye-Care Desk Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Eye-Care+Desk+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Clip-On Reading Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Clip-On+Reading+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Desk Lamp with Phone Holder</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Desk+Lamp+with+Phone+Holder" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Desk Lamp with Clock</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Desk+Lamp+with+Clock" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>LED Lamp with Multiple Modes</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=LED+Lamp+with+Multiple+Modes" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Portable Reading Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Portable+Reading+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Minimal Desk Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Minimal+Desk+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Flexible Neck Study Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Flexible+Neck+Study+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Battery-Powered Study Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Battery-Powered+Study+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Bedside Reading Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Bedside+Reading+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>USB-C Desk Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=USB-C+Desk+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Warm-Light Study Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Warm-Light+Study+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Study Lamp with Timer</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Study+Lamp+with+Timer" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💡</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Adjustable Brightness Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Adjustable+Brightness+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="category-section" id="laptop-accessories">
+      <div class="section-heading">
+        <span class="section-label">Tech</span>
+        <h2>Best Laptop Accessories for College Students</h2>
+        <p>20 useful options to compare before buying.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Laptop Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Wireless Mouse</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Wireless+Mouse" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Compact Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Compact+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>USB Hub</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=USB+Hub" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Laptop Sleeve</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Sleeve" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Laptop Cooling Pad</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Cooling+Pad" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Wireless Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Wireless+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Laptop Cleaning Kit</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Cleaning+Kit" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>USB-C Adapter</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=USB-C+Adapter" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>HDMI Adapter</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=HDMI+Adapter" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Laptop Webcam</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Webcam" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Screen Protector</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Screen+Protector" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Keyboard Cover</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Keyboard+Cover" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Laptop Privacy Screen</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Privacy+Screen" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>USB-C Cable</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=USB-C+Cable" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Laptop Lock</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Lock" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Cable Organizer</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Cable+Organizer" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>External SSD</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=External+SSD" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>USB Flash Drive</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=USB+Flash+Drive" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">💻</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Laptop Charger Organizer</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laptop+Charger+Organizer" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="category-section" id="hostel-essentials">
+      <div class="section-heading">
+        <span class="section-label">Hostel</span>
+        <h2>College Hostel Essentials: What You Actually Need</h2>
+        <p>20 useful options to compare before buying.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Bedsheet Set</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Bedsheet+Set" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Pillow</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Pillow" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Pillow Cover Set</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Pillow+Cover+Set" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Lightweight Blanket</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Lightweight+Blanket" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Laundry Bag</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laundry+Bag" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Hangers</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Hangers" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Storage Organizer</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Storage+Organizer" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Foldable Storage Box</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Foldable+Storage+Box" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Toiletry Bag</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Toiletry+Bag" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Travel Towel</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Travel+Towel" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Water Bottle</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Water+Bottle" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Electric Kettle</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Electric+Kettle" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Extension Board</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Extension+Board" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Night Lamp</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Night+Lamp" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Desk Organizer</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Desk+Organizer" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Door Hook</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Door+Hook" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Shoe Organizer</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Shoe+Organizer" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Laundry Basket</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Laundry+Basket" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Clothes Drying Rope</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Clothes+Drying+Rope" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">🛏️</div>
+          <div class="product-info">
+            <span class="tag">Hostel</span>
+            <h3>Small Waste Bin</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Small+Waste+Bin" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="category-section" id="keyboards">
+      <div class="section-heading">
+        <span class="section-label">Tech</span>
+        <h2>Best Keyboards for Students Under ₹1,500</h2>
+        <p>20 useful options to compare before buying.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Compact Wired Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Compact+Wired+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Full-Size Wired Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Full-Size+Wired+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Wireless Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Wireless+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Slim Wireless Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Slim+Wireless+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Mechanical-Feel Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Mechanical-Feel+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Membrane Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Membrane+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Compact Mechanical Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Compact+Mechanical+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Bluetooth Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Bluetooth+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Multi-Device Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Multi-Device+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Silent Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Silent+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Ergonomic Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Ergonomic+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>RGB Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=RGB+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Tenkeyless Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Tenkeyless+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Portable Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Portable+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>USB-C Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=USB-C+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Low-Profile Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Low-Profile+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Office Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Office+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Gaming Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Gaming+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Mini Keyboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Mini+Keyboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">⌨️</div>
+          <div class="product-info">
+            <span class="tag">Tech</span>
+            <h3>Keyboard and Mouse Combo</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Keyboard+and+Mouse+Combo" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="category-section" id="study-setup">
+      <div class="section-heading">
+        <span class="section-label">Study</span>
+        <h2>How to Build a Simple College Study Setup on a Budget</h2>
+        <p>20 useful options to compare before buying.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Study Desk Organizer</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Study+Desk+Organizer" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Desk Mat</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Desk+Mat" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Notebook Set</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Notebook+Set" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Sticky Notes</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Sticky+Notes" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Highlighter Set</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Highlighter+Set" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Ball Pen Set</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Ball+Pen+Set" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Mechanical Pencil Set</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Mechanical+Pencil+Set" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Whiteboard</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Whiteboard" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Whiteboard Markers</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Whiteboard+Markers" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Document Folder</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Document+Folder" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>File Organizer</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=File+Organizer" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Book Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Book+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Pen Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Pen+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Cable Clips</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Cable+Clips" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Desk Calendar</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Desk+Calendar" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Planner</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Planner" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Reading Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Reading+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Monitor Stand</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Monitor+Stand" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Desk Drawer Organizer</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Desk+Drawer+Organizer" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">📚</div>
+          <div class="product-info">
+            <span class="tag">Study</span>
+            <h3>Study Timer</h3>
+            <p>Useful for college students, hostel life and everyday study or tech needs.</p>
+            <a class="buy-btn" href="https://www.amazon.in/s?k=Study+Timer" target="_blank" rel="noopener noreferrer">View on Amazon →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+</main>
+
+<footer>
+  CampusKit — Student essentials, comparisons and buying guides.
+</footer>
+
+</body>
+</html>
