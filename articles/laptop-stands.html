@@ -77,56 +77,140 @@
     .section-heading p { color: #707070; margin: 0; }
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 16px;
+      grid-template-columns: 1fr;
+      gap: 24px;
     }
     .product-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
       background: #fff;
-      border: 1px solid #e6e6e1;
-      border-radius: 18px;
+      border: 1px solid #e4e4df;
+      border-radius: 28px;
       overflow: hidden;
       min-width: 0;
-      transition: transform .2s ease, box-shadow .2s ease;
+      box-shadow: 0 18px 55px rgba(0,0,0,.07);
+      transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease;
+      animation: cardIn .65s ease both;
     }
     .product-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(0,0,0,.08);
+      transform: translateY(-7px);
+      box-shadow: 0 28px 70px rgba(0,0,0,.12);
+    }
+    .product-card:active {
+      transform: scale(.985);
+    }
+    .product-card.clicked {
+      animation: clickPulse .45s ease;
     }
     .product-image {
-      height: 150px;
+      min-height: 390px;
       display: grid;
       place-items: center;
-      background: #f0f0ec;
-      font-size: 58px;
+      padding: 28px;
+      background: linear-gradient(145deg, #f7f7f4, #ecece8);
+      position: relative;
     }
-    .product-info { padding: 18px; }
+    .product-image::after {
+      content: "";
+      position: absolute;
+      width: 65%;
+      height: 22px;
+      bottom: 28px;
+      left: 17.5%;
+      border-radius: 50%;
+      background: rgba(0,0,0,.08);
+      filter: blur(14px);
+      transition: transform .35s ease, opacity .35s ease;
+    }
+    .product-card:hover .product-image::after {
+      transform: scale(1.08);
+      opacity: .65;
+    }
+    .product-image img {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      max-height: 360px;
+      object-fit: contain;
+      transition: transform .45s cubic-bezier(.2,.8,.2,1);
+    }
+    .product-card:hover .product-image img {
+      transform: scale(1.035);
+    }
+    .product-info {
+      padding: 42px 42px 38px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #fff;
+    }
     .tag {
       text-transform: uppercase;
-      letter-spacing: .12em;
+      letter-spacing: .14em;
       color: #777;
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 800;
+      margin-bottom: 12px;
     }
     .product-info h3 {
-      font-size: 18px;
-      line-height: 1.2;
-      margin: 8px 0;
+      font-size: clamp(25px, 2.7vw, 36px);
+      line-height: 1.08;
+      letter-spacing: -.035em;
+      margin: 0 0 18px;
+      max-width: 520px;
     }
     .product-info p {
-      color: #707070;
-      font-size: 13px;
-      min-height: 60px;
-      margin: 0 0 15px;
+      color: #666;
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0 0 26px;
+      max-width: 520px;
     }
     .buy-btn {
-      display: inline-block;
+      position: relative;
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       background: #111;
       color: white;
       text-decoration: none;
-      border-radius: 9px;
-      padding: 9px 12px;
-      font-size: 13px;
-      font-weight: 700;
+      border-radius: 13px;
+      padding: 14px 20px;
+      font-size: 15px;
+      font-weight: 800;
+      overflow: hidden;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    }
+    .buy-btn::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255,255,255,.14);
+      transform: translateX(-105%);
+      transition: transform .35s ease;
+    }
+    .buy-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(0,0,0,.18);
+    }
+    .buy-btn:hover::after {
+      transform: translateX(105%);
+    }
+    .buy-btn:active {
+      transform: scale(.94);
+    }
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes clickPulse {
+      0% { transform: scale(1); }
+      45% { transform: scale(.985); }
+      100% { transform: scale(1); }
     }
     footer {
       border-top: 1px solid #ddd;
@@ -135,17 +219,20 @@
       color: #777;
       font-size: 13px;
     }
-    @media (max-width: 1000px) {
-      .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    @media (max-width: 800px) {
+      .product-card { grid-template-columns: 1fr; }
+      .product-image { min-height: 300px; }
+      .product-info { padding: 30px; }
     }
     @media (max-width: 700px) {
       .nav { align-items: flex-start; flex-direction: column; }
-      .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .hero { padding-top: 45px; }
     }
     @media (max-width: 480px) {
-      .product-grid { grid-template-columns: 1fr; }
-      .product-image { height: 130px; }
+      .product-image { min-height: 245px; padding: 18px; }
+      .product-info { padding: 25px 22px 28px; }
+      .product-info h3 { font-size: 25px; }
+      .product-info p { font-size: 14px; }
     }
   </style>
 </head>
@@ -164,12 +251,12 @@
       <div class="section-heading">
         <span class="section-label">Tech</span>
         <h2>Best Laptop Stands for College Students</h2>
-        <p>20 useful options to compare before buying.</p>
+        <p>Selected student-friendly pick — tap the button to view it on Amazon.</p>
       </div>
       <div class="product-grid">
         <article class="product-card">
           <div class="product-image">
-            <img src="https://m.media-amazon.com/images/I/61MSSzgvXOL._SL1457_.jpg" alt="Dyazo 6 Angle Foldable Portable Laptop Riser Stand" loading="lazy" style="width:100%;height:100%;object-fit:contain;">
+            <img src="https://m.media-amazon.com/images/I/61MSSzgvXOL._SL1457_.jpg" alt="Dyazo 6 Angle Foldable Portable Laptop Riser Stand" loading="lazy" >
           </div>
           <div class="product-info">
             <span class="tag">Tech · Dyazo</span>
@@ -186,5 +273,14 @@
   CampusKit — Student essentials, comparisons and buying guides.
 </footer>
 
+<script>
+document.querySelectorAll('.product-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.remove('clicked');
+    void card.offsetWidth;
+    card.classList.add('clicked');
+  });
+});
+</script>
 </body>
 </html>
