@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+
 <meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <meta name="description"
@@ -12,302 +14,13 @@ content="CampusKit — practical buying guides for Indian college students cover
 
 <link rel="stylesheet" href="style.css">
 
-<style>
-
-/* ================================
-   CAMPUSKIT VISUAL V2
-   ================================ */
-
-:root{
-  --ck-blue:#1769d2;
-  --ck-blue-light:#eaf3ff;
-  --ck-dark:#101114;
-  --ck-muted:#686b73;
-  --ck-border:#e7e7e9;
-  --ck-bg:#f8f8f6;
-  --ck-card:#ffffff;
-}
-
-/* HERO */
-
-.hero{
-  padding-top:70px;
-  padding-bottom:80px;
-}
-
-.hero-grid{
-  align-items:center;
-}
-
-.hero h1{
-  letter-spacing:-3px;
-}
-
-.hero h1 em{
-  color:var(--ck-blue);
-  font-style:normal;
-}
-
-.eyebrow{
-  letter-spacing:2px;
-  font-weight:800;
-}
-
-/* HERO PRODUCT PANEL */
-
-.hero-panel{
-  position:relative;
-}
-
-.mock-browser{
-  background:#101114;
-  border-radius:24px;
-  padding:10px;
-  box-shadow:0 25px 70px rgba(0,0,0,.16);
-  transform:rotate(1deg);
-}
-
-.browser-top{
-  height:32px;
-  display:flex;
-  align-items:center;
-  gap:7px;
-  padding:0 10px;
-}
-
-.browser-top .dot{
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:#666;
-}
-
-.mock-content{
-  background:#f7f7f5;
-  border-radius:17px;
-  padding:28px;
-}
-
-.mock-chip{
-  display:inline-block;
-  font-size:10px;
-  font-weight:800;
-  letter-spacing:1.3px;
-  background:#e6f0ff;
-  color:#1769d2;
-  padding:7px 10px;
-  border-radius:20px;
-}
-
-.mock-title{
-  font-size:25px;
-  line-height:1.15;
-  font-weight:800;
-  margin:18px 0 22px;
-  max-width:330px;
-}
-
-.mock-subtitle{
-  font-size:13px;
-  color:#6c6f75;
-  margin-bottom:18px;
-}
-
-.mock-pick{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  background:white;
-  border:1px solid #e5e5e5;
-  border-radius:14px;
-  padding:13px;
-  margin-top:10px;
-}
-
-.mock-pick-image{
-  width:54px;
-  height:54px;
-  border-radius:11px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:#edf4ff;
-  color:#1769d2;
-  font-size:24px;
-  flex-shrink:0;
-}
-
-.mock-pick strong{
-  display:block;
-  font-size:14px;
-}
-
-.mock-pick span{
-  display:block;
-  font-size:11px;
-  color:#777;
-  margin-top:3px;
-}
-
-.mock-arrow{
-  margin-left:auto;
-  color:#1769d2;
-  font-weight:800;
-}
-
-/* CATEGORY CARDS */
-
-.categories{
-  gap:16px;
-}
-
-.category{
-  position:relative;
-  overflow:hidden;
-  transition:.25s ease;
-}
-
-.category:hover{
-  transform:translateY(-5px);
-  border-color:#cbdff9;
-  box-shadow:0 15px 35px rgba(23,105,210,.08);
-}
-
-.category-icon{
-  width:52px;
-  height:52px;
-  border-radius:15px;
-  background:#f0f5fb;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:24px;
-  margin-bottom:20px;
-}
-
-/* GUIDE CARDS */
-
-.article-grid{
-  gap:20px;
-}
-
-.article-card{
-  overflow:hidden;
-  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
-}
-
-.article-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 18px 45px rgba(0,0,0,.08);
-  border-color:#d8e5f6;
-}
-
-.article-visual{
-  height:185px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:55px;
-  background:
-    radial-gradient(circle at 30% 30%,#edf5ff 0,#edf5ff 20%,transparent 21%),
-    linear-gradient(135deg,#f7f9fc,#eef3f8);
-  border-bottom:1px solid #eee;
-}
-
-.article-body{
-  padding:22px;
-}
-
-.tag{
-  font-size:10px;
-  letter-spacing:1.5px;
-  font-weight:800;
-  color:#1769d2;
-}
-
-.article-body h3{
-  margin-top:9px;
-  line-height:1.25;
-}
-
-.article-body p{
-  color:#70737a;
-}
-
-/* FEATURED */
-
-.featured{
-  position:relative;
-  overflow:hidden;
-}
-
-.featured:after{
-  content:"";
-  position:absolute;
-  width:300px;
-  height:300px;
-  border-radius:50%;
-  background:#1769d2;
-  opacity:.07;
-  right:-100px;
-  bottom:-150px;
-}
-
-/* STATS */
-
-.stat{
-  transition:.2s ease;
-}
-
-.stat:hover{
-  transform:translateY(-3px);
-}
-
-/* NEWSLETTER */
-
-.newsletter{
-  border:1px solid var(--ck-border);
-  background:linear-gradient(135deg,#fff,#f4f8fd);
-}
-
-/* FOOTER */
-
-footer{
-  margin-top:80px;
-}
-
-/* MOBILE */
-
-@media(max-width:800px){
-
-  .hero{
-    padding-top:40px;
-  }
-
-  .mock-browser{
-    transform:none;
-  }
-
-  .mock-content{
-    padding:22px;
-  }
-
-  .mock-title{
-    font-size:22px;
-  }
-
-  .article-visual{
-    height:150px;
-  }
-
-}
-
-</style>
-
 </head>
 
 
 <body>
+
+
+<!-- ================= HEADER ================= -->
 
 <header class="site-header">
 
@@ -320,8 +33,11 @@ Campus<span>Kit</span>
 <nav class="nav-links">
 
 <a href="#categories">Categories</a>
+
 <a href="#guides">Guides</a>
+
 <a href="about.html">About</a>
+
 <a href="disclosure.html">Disclosure</a>
 
 <a class="nav-cta" href="#guides">
@@ -330,16 +46,20 @@ Explore guides
 
 </nav>
 
+
 <button
 class="menu-btn"
 aria-label="Open menu"
 onclick="document.querySelector('.nav-links').classList.toggle('mobile-open')">
+
 ☰
+
 </button>
 
 </div>
 
 </header>
+
 
 
 <main>
@@ -351,132 +71,136 @@ onclick="document.querySelector('.nav-links').classList.toggle('mobile-open')">
 
 <div class="wrap hero-grid">
 
-<div>
+
+<div class="hero-copy">
 
 <p class="eyebrow">
 BUILT FOR COLLEGE LIFE
 </p>
 
 <h1>
-Buy smarter.
-<em>Study better.</em>
+Buy smarter.<br>
+<span>Study better.</span>
 </h1>
 
-<p class="lead">
+<p class="hero-description">
+
 Straightforward buying guides for Indian college students — from laptop accessories and study setups to hostel essentials.
+
 </p>
 
-<div class="hero-actions">
 
-<a class="button" href="#guides">
-Explore guides →
+<div class="hero-buttons">
+
+<a class="button primary" href="#guides">
+Explore guides
+<span>↗</span>
 </a>
 
-<a class="button secondary" href="#categories">
+<a class="button ghost" href="#categories">
 Browse categories
 </a>
 
 </div>
 
 
-<div class="search-wrap">
+<div class="search-box">
 
 <input
 id="siteSearch"
 type="search"
-placeholder="Search guides e.g. laptop stand..."
-aria-label="Search guides">
+placeholder="Search guides — laptop stand, mouse, hostel..."
+aria-label="Search CampusKit guides">
 
 <button onclick="searchGuides()">
-Search
+SEARCH
 </button>
 
 </div>
 
+
+<div class="hero-meta">
+
+<span>10+ GUIDES</span>
+
+<span class="meta-line"></span>
+
+<span>4 CATEGORIES</span>
+
+<span class="meta-line"></span>
+
+<span>MADE FOR STUDENTS</span>
+
 </div>
-
-
-<!-- STUDENT PICKS -->
-
-<div class="hero-panel">
-
-<div class="mock-browser">
-
-<div class="browser-top">
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-</div>
-
-
-<div class="mock-content">
-
-<span class="mock-chip">
-STUDENT PICKS
-</span>
-
-<div class="mock-title">
-Things worth checking before you buy.
-</div>
-
-<div class="mock-subtitle">
-Simple recommendations for everyday college life.
-</div>
-
-
-<div class="mock-pick">
-
-<div class="mock-pick-image">
-💻
-</div>
-
-<div>
-<strong>Laptop Stand</strong>
-<span>Desk setup • portability</span>
-</div>
-
-<div class="mock-arrow">→</div>
 
 </div>
 
 
-<div class="mock-pick">
 
-<div class="mock-pick-image">
-🖱️
+<!-- HERO VISUAL -->
+
+<div class="hero-visual">
+
+<div class="hero-image">
+
+<div class="image-label">
+CAMPUSKIT / 01
 </div>
 
-<div>
-<strong>Wireless Mouse</strong>
-<span>Comfort • everyday use</span>
+<div class="hero-object">
+
+<div class="laptop-screen">
 </div>
 
-<div class="mock-arrow">→</div>
-
+<div class="laptop-base">
 </div>
-
-
-<div class="mock-pick">
-
-<div class="mock-pick-image">
-💡
-</div>
-
-<div>
-<strong>Study Lamp</strong>
-<span>Hostel • study setup</span>
-</div>
-
-<div class="mock-arrow">→</div>
 
 </div>
 
+
+<div class="hero-caption">
+
+<span>STUDENT SETUP</span>
+
+<strong>
+Simple things.
+Better setup.
+</strong>
 
 </div>
 
 </div>
 
 </div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ================= MARQUEE ================= -->
+
+<section class="marquee">
+
+<div class="marquee-track">
+
+<span>TECH</span>
+<i>✦</i>
+<span>HOSTEL</span>
+<i>✦</i>
+<span>STUDY</span>
+<i>✦</i>
+<span>COLLEGE</span>
+<i>✦</i>
+<span>TECH</span>
+<i>✦</i>
+<span>HOSTEL</span>
+<i>✦</i>
+<span>STUDY</span>
+<i>✦</i>
+<span>COLLEGE</span>
 
 </div>
 
@@ -486,118 +210,310 @@ Simple recommendations for everyday college life.
 
 <!-- ================= CATEGORIES ================= -->
 
-<section id="categories" class="wrap section">
+<section id="categories" class="section categories-section">
 
-<div class="section-head">
+<div class="wrap">
+
+
+<div class="section-heading">
 
 <div>
 
 <p class="eyebrow">
-BROWSE
+01 / CATEGORIES
 </p>
 
 <h2>
-What are you looking for?
+Start with what<br>
+you actually need.
+</h2>
+
+</div>
+
+
+<p class="section-description">
+
+Four simple categories covering the things students actually buy, use and need around college.
+
+</p>
+
+</div>
+
+
+
+<div class="category-grid">
+
+
+<a class="category-card tech" href="#guides">
+
+<div class="category-number">
+01
+</div>
+
+<div class="category-visual">
+<div class="visual-laptop"></div>
+</div>
+
+<div class="category-content">
+
+<span>TECH</span>
+
+<h3>
+Laptop accessories,<br>
+gadgets & gear.
+</h3>
+
+<p>
+Stands, mice, keyboards and useful everyday tech.
+</p>
+
+<div class="category-link">
+EXPLORE TECH <b>↗</b>
+</div>
+
+</div>
+
+</a>
+
+
+
+<a class="category-card hostel" href="#guides">
+
+<div class="category-number">
+02
+</div>
+
+<div class="category-visual">
+<div class="visual-room"></div>
+</div>
+
+<div class="category-content">
+
+<span>HOSTEL</span>
+
+<h3>
+Set up your room<br>
+without overbuying.
+</h3>
+
+<p>
+Practical essentials, organization and desk setup.
+</p>
+
+<div class="category-link">
+EXPLORE HOSTEL <b>↗</b>
+</div>
+
+</div>
+
+</a>
+
+
+
+<a class="category-card study" href="#guides">
+
+<div class="category-number">
+03
+</div>
+
+<div class="category-visual">
+<div class="visual-lamp"></div>
+</div>
+
+<div class="category-content">
+
+<span>STUDY</span>
+
+<h3>
+Build a study space<br>
+that works.
+</h3>
+
+<p>
+Lighting, productivity gear and simple setups.
+</p>
+
+<div class="category-link">
+EXPLORE STUDY <b>↗</b>
+</div>
+
+</div>
+
+</a>
+
+
+
+<a class="category-card college" href="#guides">
+
+<div class="category-number">
+04
+</div>
+
+<div class="category-visual">
+<div class="visual-bag"></div>
+</div>
+
+<div class="category-content">
+
+<span>COLLEGE</span>
+
+<h3>
+Everything you need<br>
+for campus life.
+</h3>
+
+<p>
+Backpacks, first-year essentials and checklists.
+</p>
+
+<div class="category-link">
+EXPLORE COLLEGE <b>↗</b>
+</div>
+
+</div>
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= STUDENT PICKS ================= -->
+
+<section class="section picks-section">
+
+<div class="wrap">
+
+<div class="picks-layout">
+
+
+<div class="picks-intro">
+
+<p class="eyebrow">
+02 / STUDENT PICKS
+</p>
+
+<h2>
+Things worth<br>
+checking <span>before</span><br>
+you buy.
 </h2>
 
 <p>
-Start with a category and narrow down what actually matters.
+No complicated shopping lists. Just practical things that can make college life a little easier.
 </p>
 
-</div>
+<a class="text-button" href="#guides">
+SEE ALL GUIDES ↗
+</a>
 
 </div>
 
 
-<div class="categories">
+
+<div class="picks-list">
 
 
-<a class="category" href="#guides">
+<a href="articles/laptop-stands.html" class="pick-item">
 
-<div class="category-icon">
-💻
+<div class="pick-index">
+01
 </div>
+
+<div class="pick-visual pick-laptop">
+</div>
+
+<div class="pick-info">
+
+<span>TECH</span>
 
 <h3>
-Tech
+Laptop Stand
 </h3>
 
 <p>
-Laptop accessories, mice, keyboards and useful gadgets.
+Better desk setup · portability
 </p>
 
-<span class="text-link">
-Explore tech →
-</span>
+</div>
+
+<div class="pick-arrow">
+↗
+</div>
 
 </a>
 
 
 
-<a class="category" href="#guides">
+<a href="articles/wireless-mouse.html" class="pick-item">
 
-<div class="category-icon">
-🛏️
+<div class="pick-index">
+02
 </div>
 
+<div class="pick-visual pick-mouse">
+</div>
+
+<div class="pick-info">
+
+<span>TECH</span>
+
 <h3>
-Hostel
+Wireless Mouse
 </h3>
 
 <p>
-Organization, desk setup and practical room essentials.
+Comfort · everyday college use
 </p>
 
-<span class="text-link">
-Explore hostel →
-</span>
+</div>
+
+<div class="pick-arrow">
+↗
+</div>
 
 </a>
 
 
 
-<a class="category" href="#guides">
+<a href="articles/study-lamps.html" class="pick-item">
 
-<div class="category-icon">
-📚
+<div class="pick-index">
+03
 </div>
 
+<div class="pick-visual pick-lamp">
+</div>
+
+<div class="pick-info">
+
+<span>STUDY</span>
+
 <h3>
-Study
+Study Lamp
 </h3>
 
 <p>
-Study lighting, setup ideas and everyday productivity gear.
+Hostel desk · adjustable lighting
 </p>
 
-<span class="text-link">
-Explore study →
-</span>
+</div>
+
+<div class="pick-arrow">
+↗
+</div>
 
 </a>
 
 
-
-<a class="category" href="#guides">
-
-<div class="category-icon">
-🎒
 </div>
 
-<h3>
-College
-</h3>
-
-<p>
-Backpacks, first-year essentials and campus checklists.
-</p>
-
-<span class="text-link">
-Explore college →
-</span>
-
-</a>
-
+</div>
 
 </div>
 
@@ -607,82 +523,118 @@ Explore college →
 
 <!-- ================= GUIDES ================= -->
 
-<section id="guides" class="wrap section">
+<section id="guides" class="section guides-section">
 
-<div class="section-head">
+<div class="wrap">
+
+
+<div class="section-heading">
 
 <div>
 
 <p class="eyebrow">
-EDITORIAL PICKS
+03 / THE EDIT
 </p>
 
 <h2>
-Latest buying guides
+Latest buying<br>
+guides.
 </h2>
-
-<p>
-Useful comparisons without the unnecessary hype.
-</p>
 
 </div>
 
-<a class="text-link" href="#guides">
-View all →
+
+<a class="text-button" href="#guides">
+VIEW ALL GUIDES ↗
 </a>
 
 </div>
 
 
-<div id="articleGrid" class="article-grid"></div>
+
+<div id="articleGrid" class="article-grid">
+
+</div>
+
+</div>
 
 </section>
 
 
 
-<!-- ================= FEATURE ================= -->
+<!-- ================= SETUP FEATURE ================= -->
 
-<section class="wrap section">
+<section class="setup-section">
 
-<div class="featured">
+<div class="wrap">
 
-<div>
+<div class="setup-card">
 
-<p class="eyebrow" style="color:#9ebbe7">
+
+<div class="setup-content">
+
+<p class="eyebrow">
 START SIMPLE
 </p>
 
-<h2 style="font-family:'Space Grotesk';font-size:2rem;margin:0">
-Build your college setup one useful item at a time.
+<h2>
+Build your college<br>
+setup <span>one item</span><br>
+at a time.
 </h2>
 
 <p>
 Before buying anything, check compatibility, current price, warranty and whether you actually need the feature.
 </p>
 
-<a class="button" href="setup-guide.html">
-Read the setup guide →
+<a class="button primary" href="setup-guide.html">
+Read the setup guide
+<span>↗</span>
 </a>
 
 </div>
 
 
-<div class="stats">
 
-<div class="stat">
+<div class="setup-stats">
+
+<div class="big-stat">
+
 <strong>10</strong>
-<span>starter guides</span>
+
+<span>
+STARTER<br>
+GUIDES
+</span>
+
 </div>
 
-<div class="stat">
-<strong>4</strong>
-<span>student categories</span>
+
+<div class="big-stat">
+
+<strong>04</strong>
+
+<span>
+STUDENT<br>
+CATEGORIES
+</span>
+
 </div>
 
-<div class="stat">
+
+<div class="big-stat">
+
 <strong>₹0</strong>
-<span>to browse CampusKit</span>
+
+<span>
+TO BROWSE<br>
+CAMPUSKIT
+</span>
+
 </div>
+
+</div>
+
 
 </div>
 
@@ -694,9 +646,11 @@ Read the setup guide →
 
 <!-- ================= CTA ================= -->
 
-<section class="wrap section">
+<section class="section final-section">
 
-<div class="newsletter">
+<div class="wrap">
+
+<div class="final-cta">
 
 <div>
 
@@ -705,18 +659,26 @@ HAVE AN IDEA?
 </p>
 
 <h2>
-What should we explain next?
+What should we<br>
+explain next?
 </h2>
-
-<p>
-Suggest a product or college problem you'd like CampusKit to explain.
-</p>
 
 </div>
 
-<a class="button" href="contact.html">
-Suggest a guide
+
+<div>
+
+<p>
+Got a college problem, product or setup you want us to explain?
+</p>
+
+<a class="text-button large" href="contact.html">
+SUGGEST A GUIDE ↗
 </a>
+
+</div>
+
+</div>
 
 </div>
 
@@ -731,26 +693,27 @@ Suggest a guide
 
 <footer>
 
-<div class="wrap footer-grid">
+<div class="wrap footer-main">
 
-<div>
 
-<div class="footer-brand">
-CampusKit
-</div>
+<div class="footer-brand-area">
+
+<a class="brand footer-brand" href="index.html">
+Campus<span>Kit</span>
+</a>
 
 <p>
 Student-focused buying guides for practical college life.
-Prices and availability can change, so always verify details with the retailer before buying.
 </p>
 
 </div>
 
 
-<div>
+
+<div class="footer-column">
 
 <h4>
-Explore
+EXPLORE
 </h4>
 
 <a href="#categories">
@@ -768,10 +731,11 @@ About
 </div>
 
 
-<div>
+
+<div class="footer-column">
 
 <h4>
-Transparency
+TRANSPARENCY
 </h4>
 
 <a href="disclosure.html">
@@ -784,11 +748,25 @@ Contact
 
 </div>
 
+
 </div>
 
 
+
 <div class="wrap footer-bottom">
-© 2026 CampusKit · Built for students
+
+<span>
+© 2026 CampusKit
+</span>
+
+<span>
+BUILT FOR STUDENTS
+</span>
+
+<span>
+PRICES & AVAILABILITY MAY CHANGE
+</span>
+
 </div>
 
 </footer>
@@ -797,9 +775,10 @@ Contact
 
 <script>
 
+
 /* ================================
    GUIDE DATA
-   ================================ */
+================================ */
 
 const guides = [
 
@@ -808,7 +787,7 @@ const guides = [
 "TECH",
 "Best Laptop Stands for College Students",
 "What to look for in a portable stand and how to choose one.",
-"💻"
+"01"
 ],
 
 [
@@ -816,7 +795,7 @@ const guides = [
 "TECH",
 "Best Wireless Mouse for College Students",
 "Comfort, portability, connectivity and battery considerations.",
-"🖱️"
+"02"
 ],
 
 [
@@ -824,7 +803,7 @@ const guides = [
 "COLLEGE",
 "Best Backpacks for Engineering Students",
 "A practical checklist for carrying a laptop, books and accessories.",
-"🎒"
+"03"
 ],
 
 [
@@ -832,7 +811,7 @@ const guides = [
 "TECH",
 "10 Useful Gadgets for College Students",
 "A shortlist of practical gadgets to consider before buying.",
-"🔌"
+"04"
 ],
 
 [
@@ -840,7 +819,7 @@ const guides = [
 "STUDY",
 "Best Study Lamps for Hostel Rooms",
 "Size, brightness, adjustability and charging options explained.",
-"💡"
+"05"
 ],
 
 [
@@ -848,7 +827,7 @@ const guides = [
 "TECH",
 "Best Laptop Accessories for College Students",
 "A hub for stands, mice, keyboards, sleeves and useful extras.",
-"💻"
+"06"
 ],
 
 [
@@ -856,7 +835,7 @@ const guides = [
 "HOSTEL",
 "College Hostel Essentials: What You Actually Need",
 "A practical list without turning your room into a storage unit.",
-"🛏️"
+"07"
 ],
 
 [
@@ -864,7 +843,7 @@ const guides = [
 "TECH",
 "Best Keyboards for Students Under ₹1,500",
 "Features to compare when you have a limited budget.",
-"⌨️"
+"08"
 ],
 
 [
@@ -872,7 +851,7 @@ const guides = [
 "STUDY",
 "How to Build a Simple College Study Setup on a Budget",
 "Prioritize the basics before spending on extras.",
-"📚"
+"09"
 ],
 
 [
@@ -880,15 +859,16 @@ const guides = [
 "COLLEGE",
 "College Essentials Checklist for First-Year Students",
 "A simple checklist for tech, study, travel and hostel needs.",
-"✅"
+"10"
 ]
 
 ];
 
 
+
 /* ================================
-   CREATE GUIDE CARDS
-   ================================ */
+   GUIDE CARDS
+================================ */
 
 document.getElementById("articleGrid").innerHTML = guides.map(g => `
 
@@ -897,13 +877,28 @@ class="article-card"
 data-search="${g[2].toLowerCase()} ${g[3].toLowerCase()} ${g[1].toLowerCase()}"
 href="articles/${g[0]}.html">
 
-<div class="article-visual">
+
+<div class="article-image">
+
+<div class="article-number">
 ${g[4]}
 </div>
 
+<div class="article-object object-${g[0]}">
+</div>
+
+<div class="article-category">
+${g[1]}
+</div>
+
+</div>
+
+
 <div class="article-body">
 
-<span class="tag">
+<div>
+
+<span class="article-tag">
 ${g[1]}
 </span>
 
@@ -915,11 +910,15 @@ ${g[2]}
 ${g[3]}
 </p>
 
-<span class="read">
-Read guide →
+</div>
+
+
+<span class="read-link">
+READ GUIDE <b>↗</b>
 </span>
 
 </div>
+
 
 </a>
 
@@ -929,7 +928,7 @@ Read guide →
 
 /* ================================
    SEARCH
-   ================================ */
+================================ */
 
 function searchGuides(){
 
@@ -939,6 +938,7 @@ document
 .value
 .trim()
 .toLowerCase();
+
 
 document
 .querySelectorAll(".article-card")
@@ -951,6 +951,7 @@ q && !card.dataset.search.includes(q)
 
 });
 
+
 document
 .getElementById("guides")
 .scrollIntoView({
@@ -962,15 +963,18 @@ behavior:"smooth"
 
 document
 .getElementById("siteSearch")
-.addEventListener("keydown",e=>{
+.addEventListener("keydown", e => {
 
-if(e.key==="Enter")
+if(e.key === "Enter"){
 searchGuides();
+}
 
 });
+
 
 </script>
 
 
 </body>
+
 </html>
